@@ -2,12 +2,12 @@
 
 ## Hosted LIVE with CD Pipeline
 
-### --  LIVE @ https://oifd.netlify.app/  -- <br />
+_LIVE @ https://oifd.netlify.app/_
+
 The site is hosted by netlify which also is synced to the Github repo using my creds. It detects changes to the repo and continuously deploys assuming the checks pass. <br />
-<br />
+
 Dependencies are locked with a `yarn.lock` file, so please use `yarn` and not
 `npm` for installing them.
-<br />
 <br />
 
 ## Kanban Board
