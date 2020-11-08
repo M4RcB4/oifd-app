@@ -1,3 +1,29 @@
+# Project Organization and External Resources
+
+## Kanban Board
+
+https://trello.com/b/OaExNQe4/outside-in-frontend-development
+This like a real project. Various stories and epics on this board.
+
+## Github Repo
+
+https://github.com/M4RcB4/oifd-app
+Excuse the redundancy if you are viewing this on github...
+
+## CI Pipeline Diagram with Technologies
+
+https://app.diagrams.net/#G1KDgGFXApQ4S6xRfoKBOBslX645SAN9dW
+A visual representation of the system, the CI infrastructure that deplots/tests it, and the technologies used to create those points in the system. This could used to identify the testing opportuties and what scope and context they apply to. 
+
+<br />
+<br />
+====================================================================== <br />
+====================Standard "Create React App" Readme.md====================
+====================================================================== <br />
+The standard readme produced by the command line arg used to generate the base project <br />
+<br />
+<br />
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
