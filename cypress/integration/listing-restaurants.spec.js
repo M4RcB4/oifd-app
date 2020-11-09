@@ -4,8 +4,10 @@ describe("Listing Restaurants", () => {
     const pizzaPlace = "Pizza Place";
     const aPIKey = "wOnZaHudSV9lvHDqJkLYSpdpP7ahSeCJ";
 
+    // Prevents cypress from allowing calls to the backend
     cy.server({ force404: true });
 
+    // Mocks the response for the backend
     cy.route({
       method: "GET",
       url: `https://outside-in-dev-api.herokuapp.com/${aPIKey}/restaurants`,
@@ -15,6 +17,7 @@ describe("Listing Restaurants", () => {
       ],
     });
 
+    // Asserts the resturants mocked show on the site page
     cy.visit("/");
     cy.contains(sushiPlace);
     cy.contains(pizzaPlace);
