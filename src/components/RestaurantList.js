@@ -1,4 +1,6 @@
 import React, { useEffect } from "react";
+import { connect } from "react-redux";
+import { loadRestaurants } from "../store/restaurants/actions";
 
 /* IMPORTANT NOTE ABOUT TESTABILITY!!!
 In addition to the default export, we also do a named export of the 
@@ -19,4 +21,18 @@ export const RestaurantList = ({ loadRestaurants, restaurants }) => {
   );
 };
 
-export default RestaurantList;
+const mapStateToProps = state => ({
+  restaurants: state.restaurants.records,
+});
+
+const mapDispatchToProps = { loadRestaurants };
+
+/*Note that we are using the React-Redux connect() function rather than the newer 
+hooks-based API. Redux maintainer Mark Erikson writes about the tradeoffs between 
+the two React-Redux APIs, and there is not a strong recommendation to use one or
+the other. Because our component testing approach involves passing props to a 
+component that is unaware of Redux, the connect() function is a more natural fit. 
+We could accomplish the same by creating a "connected" component that uses 
+React-Redux hooks and passes the props down to the unconnected component, but there 
+are few benefits to that approach over using connect().*/
+export default connect(mapStateToProps, mapDispatchToProps)(RestaurantList);
