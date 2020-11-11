@@ -13,7 +13,7 @@ describe("RestaurantList", () => {
 
   beforeEach(() => {
     // Since this is a unit test we don't want to connect to the redux store
-    loadRestaurants = jest.fn().mockName('loadRestaurants');
+    loadRestaurants = jest.fn().mockName("loadRestaurants");
 
     context = render(
       <RestaurantList
