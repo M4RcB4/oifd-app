@@ -1,8 +1,10 @@
+import config from "../../config.js";
+
 describe("Listing Restaurants", () => {
   it("shows restaurants from the server", () => {
     const sushiPlace = "Sushi Place";
     const pizzaPlace = "Pizza Place";
-    const aPIKey = "wOnZaHudSV9lvHDqJkLYSpdpP7ahSeCJ";
+    const aPIKey = config.aPIKey;
 
     // Prevents cypress from allowing calls to the backend
     cy.server({ force404: true });

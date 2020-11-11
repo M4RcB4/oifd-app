@@ -7,6 +7,16 @@
 
 <br />
 
+## Things to remember
+### __Don't mock what you don't own...__
+The principle applies equally well to using any kind of test doubles for code you don't own, not just mocks. There are a few reasons for this:
+
+> If you mock third party code but you get the functionality wrong, then your tests will pass against your mock, but won't work against the real third-party library. This is especially risky when the behavior of the library changes > from how it worked when you first wrote the test.
+
+>Some of the value of unit tests is in allowing you to design the API of your dependencies, but since you can't control the API of the third-party library, you don't get the opportunity to affect the API. (Pull requests to open-source projects notwithstanding!)
+
+<br />
+
 ---
 
 <br />
