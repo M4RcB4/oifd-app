@@ -21,7 +21,7 @@ export const RestaurantList = ({ loadRestaurants, restaurants }) => {
   );
 };
 
-const mapStateToProps = state => ({
+const mapStateToProps = (state) => ({
   restaurants: state.restaurants.records,
 });
 
