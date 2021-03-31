@@ -4,7 +4,7 @@ import config from "./config.json";
 const aPIKey = config.aPIKey;
 
 const client = axios.create({
-  baseURL: `https://outside-in-dev-api.herokuapp.com/${aPIKey}`,
+  baseURL: `https://intense-ravine-46007.herokuapp.com/https://outside-in-dev-api.herokuapp.com/${aPIKey}`,
 });
 
 const api = {
